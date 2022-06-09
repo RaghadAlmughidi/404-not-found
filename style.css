@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono&display=swap');
+body {
+    max-width: 375px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Space Mono', monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    margin-left: 1.5625em;
+    margin-top: 1.25em;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Inconsolata', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+.top-img {
+    margin: 4em 2.75em;
+    animation: alternate;
+}
+
+.top-img img {
+    width: 100%;
+}
+
+.text-bottom {}
+
+h1,
+p {
+    font-family: 'Space Mono', monospace;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    padding: 0 1.5em;
+    text-align: left;
+    color: #4F4F4F;
+}
+
+button {
+    background-color: #333333;
+    border: none;
+    min-width: 19em;
+    height: 5em;
+    margin: 4em 0;
+    margin-left: 1em;
+}
+
+button:hover,
+button:focus {
+    background-color: #4F4F4F;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Space Mono';
+    font-size: 14px;
+    text-align: center;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+footer p {
+    color: #BDBDBD;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media(min-width:600px) {
+    body {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .top-img {
+        width: 50%;
+    }
+    .text-bottom {
+        width: 50%;
+        margin-top: 6em;
+    }
+    h1,
+    p {
+        text-align: left;
+    }
+    button {
+        float: left;
+    }
+    footer {
+        margin-top: 13em;
+    }
+}
